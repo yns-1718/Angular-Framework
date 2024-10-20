@@ -1,0 +1,59 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <h3>Products</h3>
+      <div class="card-body">
+        <input type="text" [(ngModel)]="appState.productState.keyword">&nbsp;
+        <button (click)="searchProduct()" class="btn btn-outline-success">Search
+        <i class="bi bi-search"></i></button>
+      </div>
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th *ngIf="appState.authState.roles.includes('ADMIN')">Checked</th>
+          <th *ngIf="appState.authState.roles.includes('ADMIN')">Edit</th>
+          <th *ngIf="appState.authState.roles.includes('ADMIN')">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of appState.productState.products">
+          <td>{{product.name}}</td>
+          <td>{{product.price}}</td>
+          <td *ngIf="appState.authState.roles.includes('ADMIN')">
+            <button (click)="handleCheckProduct(product)" class="btn btn-outline-success">
+              <i [class]="product.checked?'bi bi-check':'bi bi-circle'"></i>
+            </button>
+          </td>
+          <td *ngIf="appState.authState.roles.includes('ADMIN')">
+            <button (click)="handleEdit(product)" class="btn btn-outline-success">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+          <td *ngIf="appState.authState.roles.includes('ADMIN')">
+            <button (click)="handleDelete(product)" class="btn btn-outline-danger" >
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" [class.disabled]="appState.productState.currentPage === 1">
+            <button class="page-link" (click)="previousPage()">Previous</button>
+          </li>
+          <li class="page-item" *ngFor="let page of appState.productState.pages" [class.active]="appState.productState.currentPage === page">
+            <button class="page-link" (click)="getPage(page)">{{page}}</button>
+          </li>
+          <li class="page-item" [class.disabled]="appState.productState.currentPage === appState.productState.totalPages">
+            <button class="page-link" (click)="nextPage()">Next</button>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+{
+  "users": [
+    {"id":  "user1", "password":  "MTIzNA==", "roles":  ["USER"], "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNjE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODgvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoibW9oYW1lZCIsImxhc3RuYW1lIjoiYmVuIiwiZW1haWwiOiJtZWQuYmVuQGdtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiXX0.FfGp4rqAAtrtV8Sv48jAEqm25TOfubxZ2sZxv0_8VTM"  },
+    {"id":  "user2", "password":  "MTIzNA==", "roles":  ["USER"], "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNjE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODgvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoibW9oYW1lZCIsImxhc3RuYW1lIjoiYmVuIiwiZW1haWwiOiJtZWQuYmVuQGdtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiXX0.fxy-yI8RGIW-TkiOXO7Oy-LKPBUvF17JEofrLZ6zkKc"  },
+    {"id":  "admin", "password":  "MTIzNA==", "roles":  ["USER","ADMIN"], "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNjE2MjM5MDIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0Ojg4ODgvYXV0aCIsIm5iZiI6MTUxNjIzOTAyMiwiZmlyc3RuYW1lIjoibW9oYW1lZCIsImxhc3RuYW1lIjoiYmVuIiwiZW1haWwiOiJtZWQuYmVuQGdtYWlsLmNvbSIsInJvbGVzIjpbIlVTRVIiLCJBRE1JTiJdfQ.CUICVCYgD7XUruTpBppKMt_eqGKxCekIF1QPZNiB5E0"  }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Computer",
+      "price": 11000,
+      "checked": true
+    },
+    {
+      "id": "3",
+      "name": "Printer",
+      "price": 700,
+      "checked": true
+    },
+    {
+      "id": "4d2a",
+      "name": "Smartwatch",
+      "price": "4000",
+      "checked": true
+    },
+    {
+      "id": "2ff2",
+      "name": "b",
+      "price": "100",
+      "checked": true
+    },
+    {
+      "id": "5d25",
+      "name": "test",
+      "price": "4500",
+      "checked": true
+    },
+    {
+      "id": "5d25",
+      "name": "test",
+      "price": "4500",
+      "checked": true
+    },
+    {
+      "id": "5a9b",
+      "name": "mm",
+      "price": "500",
+      "checked": false
+    }
+  ]
+}
